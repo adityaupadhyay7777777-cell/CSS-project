@@ -1,74 +1,162 @@
-*{
-    background-color: rgb(42, 42, 151);
-    
-}
-.container{
-    background-color: white;
-    border-radius: 30px;
-    width: 400px;
-    padding:200px;
-    width:130vb;
-    z-index: 10;
-
-    position:center;
-    margin:30px;
-    position: absolute;
-}
-.box{
-    background-color:white;
-    color: black;
-    position: absolute;
-    top:0px;
-    left:0px;
-    gap:80px;
+body {
+    background-image: linear-gradient(to bottom, rgb(90, 32, 167), rgb(89, 46, 138));
+    margin: 0px;
     display: flex;
-    justify-content: space-around;
-    z-index: 20;
-}
-span{
-    background-color: white;
-    color: black;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+
 
 }
-li{
-    background-color: white;
-    color: black;
-    font-style: bold;
-    font-weight: bold;
-    font-size: larger;
 
+body .container {
+    background-color: white;
+    width: 90vw;
+    height: 85vh;
+    margin: 20px;
+    border-radius: 20px;
 }
-input{
-    background-color: rgb(145, 13, 163);
+
+.container .navbar {
+    color: black;
+    display: flex;
+    gap: 50px;
+}
+
+.box {
+    color: rgb(107, 106, 106);
+    font-weight: 200;
+}
+
+.container .navbar .button1 {
+    transform: translate(245px, 4px);
+    width: 100px;
+    height: 25px;
+    background-color: rgb(147, 60, 227);
     color: white;
-    padding: 5px;
-    position: relative;
-    left:120px;
-    width: 25vb;
-    border-radius: 5px;
-    font-size: 15px;
-    
 }
-form{
-    background-color:white;
+
+.name {
+    color: black;
+    font-weight: 800;
+    transform: translate(20px, 5px);
+    font-size: larger;
+    width: bold;
 }
-h2{
-    z-index: 50;
+
+.container .navbar span {
+    font-size: x-large;
+    font-weight: 900;
+    transform: translate(-28px, 3px);
+}
+
+.container .content {
+    font-size: large;
+    transform: translate(100px, 60px);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 50vw;
+}
+
+.container .content .heading {
+    font-size: larger;
+    width: bolder;
+    font-weight: 900;
+    color: rgb(76, 75, 75);
+}
+
+.content #id1 {
+    font-weight: bolder;
+    font-size: 50px;
+    transform: translate(-10px, -20px);
+    color: rgb(67, 66, 66);
+}
+
+.content #id2 {
+    font-weight: bolder;
+    font-size: 50px;
+    transform: translate(120px, -80px);
+    color: rgb(121, 43, 194);
+    width: 20vw;
+}
+
+.container .small {
+    font-size: small;
+    width: 350px;
+    transform: translate(6px, -80px);
+    color: rgb(128, 127, 127);
+    width: 20vw;
+}
+
+.bottom button {
+    transform: translate(8px, -80px);
+    padding: 3px 30px;
+    border: 2px solid purple;
+    color: purple;
+}
+
+.b1:hover {
+    background-color: rgb(112, 109, 109);
+    color: white;
+    transition: all 0.5s;
+
+}
+
+.footer {
+    display: flex;
+    transform: translate(25px, 35px);
+    height: 0vh;
+}
+
+.footer #p1 {
+    color: white;
+    font-weight: 50px;
+
+}
+
+.footer #p2 {
+    color: rgb(14, 134, 104);
+    font-weight: 50px;
+
+}
+
+.container main {
+    display: flex;
+}
+
+.image img {
+    transform: translate(60px, 60px);
+    width: 30vw;
+    height: 60vh;
+    image-rendering: -moz-crisp-edges;
+}
+
+.logo {
+    display: flex;
+    transform: translate(15px, -40px);
+}
+
+.logo svg {
+    background-color: rgb(112, 109, 109);
+    color: white;
+    border: 1px rgb(91, 88, 88) solid;
+    border-radius: 50px;
+    font-size: x-large;
+}
+
+.logo .rating {
     background-color: white;
-    color:black;
-    position: relative;
-    top:150px;
-    left:80px;
+    color: rgb(83, 81, 81);
+    border: rgb(75, 74, 74);
+    font-size: x-large;
+    transform: translate(27px,-4px);
 
 }
-h2{
-    z-index: 500;
-    position: relative;
-    width:20vi;
-    display: inline;
-    top: 150px;
-    left: 80px;
+
+.logo .dil {
+
+transform: translate(50px,-5px);
+    font-size: x-large;
+
 }
-
-
-    
