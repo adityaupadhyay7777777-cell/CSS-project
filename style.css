@@ -103,6 +103,13 @@ body .container {
 
 }
 
+.b2:hover {
+    background-color: rgb(112, 109, 109);
+    color: white;
+    transition: all 0.5s;
+
+}
+
 .footer {
     display: flex;
     transform: translate(25px, 35px);
@@ -130,6 +137,9 @@ body .container {
     width: 30vw;
     height: 60vh;
     image-rendering: -moz-crisp-edges;
+    mix-blend-mode: multiply;
+    
+
 }
 
 .logo {
@@ -150,13 +160,13 @@ body .container {
     color: rgb(83, 81, 81);
     border: rgb(75, 74, 74);
     font-size: x-large;
-    transform: translate(27px,-4px);
+    transform: translate(27px, -4px);
 
 }
 
 .logo .dil {
 
-transform: translate(50px,-5px);
+    transform: translate(50px, -5px);
     font-size: x-large;
 
 }
