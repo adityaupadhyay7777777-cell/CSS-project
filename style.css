@@ -138,6 +138,13 @@ body .container {
     height: 60vh;
     image-rendering: -moz-crisp-edges;
     mix-blend-mode: multiply;
+    background: blur 5px;
+    
+    
+
+}
+img{
+    overflow: hidden;
     
 
 }
