@@ -22,7 +22,8 @@
     color: rgb(0, 140, 255);
 }
 
-.project {
+.project,
+.project2 {
     display: flex;
     /* justify-content: space-between; */
     flex-direction: row;
@@ -40,7 +41,7 @@
     font-size: larger;
     position: relative;
     gap: 10px;
-    left:30px;
+    left: 30px;
 }
 
 .project-left h1 {
@@ -59,17 +60,18 @@
 
 .btn {
     padding: 3px;
-    margin:3px;
+    margin: 3px;
     font-weight: bold;
     width: 100px;
     font-size: 15px;
-    background-image: linear-gradient(to right,rgb(133, 190, 225),rgb(58, 58, 241));
+    background-image: linear-gradient(to right, rgb(133, 190, 225), rgb(58, 58, 241));
     border-radius: 2px;
 }
 
 .btn:hover {
-    background-image:linear-gradient(rgb(141, 201, 51));
+    background-image: linear-gradient(rgb(141, 201, 51));
     transition: all 0.1s;
+    transform: scale(1.05);
 
 }
 
@@ -78,18 +80,19 @@
     /* justify-content: end; */
     /* align-items: end; */
     flex-direction: column;
-    
+
 }
 
-.project-right img{
+.project-right img {
     /* width: 100vh; */
     width: 545px;
     height: 100vh;
     position: relative;
 
-    
+
 }
-.project2 .project{
+
+.project2 {
     display: flex;
     width: 100vw;
     flex-direction: row-reverse;
@@ -97,35 +100,104 @@
     border-top: 0.5px solid rgba(114, 114, 114, 0.521);
 
 }
-.project2 .project .project-left{
-    transform: translate(-70px,0px);
+
+.project2 .project-left {
+    transform: translate(-70px, 0px);
 }
-.animation{
+
+.animation {
     background-color: rgb(209, 229, 229);
     width: 100vw;
-    
+
 }
-.animation #text{
+
+.animation #text {
     animation-name: font;
-    animation-duration:30s;
+    animation-duration: 30s;
     animation-delay: 2s;
     animation-timing-function: linear;
 
 }
+
 @keyframes font {
-    from{
+    from {
         position: relative;
-        left:0px;
+        left: 0px;
         color: rgb(46, 210, 210);
         /* background-color: rgb(209, 229, 229); */
         /* width: 0vw; */
     }
-    to{
+
+    to {
         position: relative;
         left: 945px;
         color: aqua;
         /* background-color: rgb(209, 229, 229); */
         /* width: 100vw; */
     }
-    
+
+}
+
+@media (orientation: portrait) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project,
+    .project2 {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .animation #text {
+        animation-duration: 0s;
+    }
+
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project .project-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translate(0px, 0px);
+        font-size: smaller;
+        width: 100%;
+        font-size: 30px;
+        position: static;
+        
+    }
+
+    .project2 .project-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translate(0px, 0px);
+        font-size: smaller;
+        width: 100%;
+        font-size: 30px;
+        
+    }
+    .project-left h1{
+        font-size: 30px;
+    }
+    .project-left h3{
+        font-size: 20px;
+    }
+    .navbar .name{
+        text-align: center;
+    }
 }
